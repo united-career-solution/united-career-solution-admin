@@ -1,9 +1,7 @@
 name: Deploy Next.js App
 
 on:
-  push:
-    branches:
-      - main # Change this if your default branch is different
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
