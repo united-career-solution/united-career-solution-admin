@@ -39,7 +39,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: ".next/standalone/"
-          target: "/var/www/united-career-solutions/admin"
+          target: "/var/www/united-career-solution/admin"
           strip_components: 2
 
       - name: Start/Restart Server with PM2
@@ -50,5 +50,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/united-career-solutions/admin
+            cd /var/www/united-career-solution/admin
             pm2 restart admin-panel || pm2 start server.js --name "admin-panel"
