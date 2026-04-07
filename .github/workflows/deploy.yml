@@ -50,5 +50,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            # Load NVM and Profile
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
             cd /var/www/united-career-solution/admin
             pm2 restart admin-panel || pm2 start server.js --name "admin-panel"
