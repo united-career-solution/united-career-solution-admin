@@ -1,4 +1,4 @@
-name: Deploy Next.js App
+name: Deploy Admin Panel
 
 on:
   workflow_dispatch:
