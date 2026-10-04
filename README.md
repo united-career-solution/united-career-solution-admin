@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **This project has moved.** It has been merged into
+> [united-career-solution-landing](https://github.com/united-career-solution/united-career-solution-landing),
+> which now serves the website, admin panel and API from one Next.js app.
+> The admin panel now lives at `/admin` (`app/admin/`). This repo is no longer deployed.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
